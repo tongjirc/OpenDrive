@@ -18,7 +18,6 @@ namespace OpenDrive
         public PlanView planView;
         public ElevationProfile elevationProfile;
         public LateralProfile lateralProfile ;
-        public List<Neighbor> neighbors = new List<Neighbor>();
         public Lanes lanes;
         public ObjectElements objects ;
         public Signals signals;
@@ -50,7 +49,6 @@ namespace OpenDrive
             if (nroad.SelectSingleNode("lateralProfile") != null) this.lateralProfile = new LateralProfile(nroad.SelectSingleNode("lateralProfile"));
             //this.lanes
             this.lanes = new Lanes(nroad.SelectSingleNode("lanes"));
-            //this.neighbors
 
             //this.objects
             this.objects = new ObjectElements(nroad.SelectSingleNode("objects"));
@@ -64,6 +62,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The objects record is the container for all objects along a road.
+    /// </summary>
     class ObjectElements
     {
         public List<ObjectElement> objs = new List<ObjectElement>();
@@ -485,6 +486,12 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The type of a road may change over its entire length. 
+    /// Therefore, a separate record is provided for the definition of the road type with respect to a certain section of the road. 
+    /// A road type entry is valid for the entire cross section of the road. 
+    /// It is also valid until a new road type record is provided or the road ends.
+    /// </summary>
     class TypeElement
     {
         public double s;
@@ -1040,6 +1047,10 @@ namespace OpenDrive
             this.value = node.Attributes.GetNamedItem("value").Value;
         }
     }
+
+    /// <summary>
+    /// The lateral profile record contains a series of superelevation and crossfall records which define the characteristics of the road surface's banking along the reference line.
+    /// </summary>
     class LateralProfile
     {
         public List<SuperElevation> superelevations = new List<SuperElevation>();
@@ -1144,6 +1155,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// This record provides detailed information about the neighbor of a road. The neighbor must be of type road.
+    /// </summary>
     class Neighbor
     {
         public string side;
@@ -1158,6 +1172,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The signals record is the container for all signals along a road.
+    /// </summary>
     class Signals
     {
         public List<SignalsReference> Sreferences = new List<SignalsReference>();
@@ -1355,15 +1372,25 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// This record follows the Road Header Record if the road is (as usual) linked to a successor, a predecessor, or a neighbor (see children of the link record). 
+    /// Isolated roads may omit this record.
+    /// </summary>
     class RoadLink
     {
         public RoadPredecessor pred;
         public RoadSuccessor succ;
-
+        public List<Neighbor> neighbors = new List<Neighbor>();
         public RoadLink(XmlNode node)
         {
             if (node.SelectSingleNode("predecessor") != null) this.pred = new RoadPredecessor(node.SelectSingleNode("predecessor"));
             if (node.SelectSingleNode("successor") != null) this.succ = new RoadSuccessor(node.SelectSingleNode("successor"));
+            //this.neighbors
+            foreach (XmlNode nn in node.SelectNodes("neighbor"))
+            {
+                Neighbor n = new Neighbor(nn);
+                neighbors.Add(n);
+            }
         }
 
     }
@@ -1393,6 +1420,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The plan view record contains a series of geometry records which define the layout of the road's reference line in the x/y-plane (plan view).
+    /// </summary>
     class PlanView
     {
         public List<Geometry> geos = new List<Geometry>();
@@ -1427,6 +1457,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The elevation profile record contains a series of elevation records which define the characteristics of the road's elevation along the reference line.
+    /// </summary>
     class ElevationProfile
     {
         public List<Elevation> elevations = new List<Elevation>();

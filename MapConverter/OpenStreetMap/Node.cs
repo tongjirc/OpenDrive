@@ -12,7 +12,6 @@ namespace OpenStreetMapsParser
         float lat;
         float lon;
 
-
         public Node(long id)
         {
             this.id = id;

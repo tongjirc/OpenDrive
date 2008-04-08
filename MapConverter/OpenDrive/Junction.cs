@@ -166,6 +166,9 @@ namespace OpenDrive
         }
     }
 
+    /// <summary>
+    /// The surface record is the container for all surface descriptions which shall be applied along a road.
+    /// </summary>
     class Surface
     {
         public List<CRG> CRGs = new List<CRG>();

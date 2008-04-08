@@ -224,8 +224,14 @@ namespace OpenStreetMapsParser
 
         }
 
-
-        public void analyseOpenStreetMapCropped(float minLat, float minLon, float maxLat, float maxLon)
+        /// <summary>
+        /// analyse single road in the opendrive
+        /// </summary>
+        /// <param name="minLat"></param>
+        /// <param name="minLon"></param>
+        /// <param name="maxLat"></param>
+        /// <param name="maxLon"></param>
+        public void analyseOpenStreetMapCropped(OpenDrive.Road road)
         {
             firstNode = true;
             croppedNumOfNodes = 0;
@@ -509,6 +515,75 @@ namespace OpenStreetMapsParser
                 file.WriteLine(e.getId().ToString() + ";" + e.getName() + ";" + e.isTwoWay());
             }
             file.Close();
+        }
+
+        /// <summary>
+        /// analysis OSM from Opendrive
+        /// </summary>
+        /// <param name="minLat"></param>
+        /// <param name="minLon"></param>
+        /// <param name="maxLat"></param>
+        /// <param name="maxLon"></param>
+        /// <param name="fileNameNodes"></param>
+        /// <param name="fileNameRoads"></param>
+        /// <param name="fileNameSubRoads"></param>
+        public void OSM2MAP(OpenDrive.Opendrive opendrive)
+        {
+            foreach (OpenDrive.Road rd in opendrive.roads)
+            {
+                try
+                {
+                    analyseOpenStreetMap(rd);
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// atach the OSM map into Map
+        /// </summary>
+        /// <param name="minLat"></param>
+        /// <param name="minLon"></param>
+        /// <param name="maxLat"></param>
+        /// <param name="maxLon"></param>
+        /// <param name="fileNameNodes"></param>
+        /// <param name="fileNameRoads"></param>
+        /// <param name="fileNameSubRoads"></param>
+        public void OSM2Map(float minLat, float minLon, float maxLat, float maxLon, string fileNameNodes, string fileNameRoads, string fileNameSubRoads)
+        {
+            
+        }
+
+        /// <summary>
+        /// atach the OSM map into vissim
+        /// </summary>
+        /// <param name="minLat"></param>
+        /// <param name="minLon"></param>
+        /// <param name="maxLat"></param>
+        /// <param name="maxLon"></param>
+        /// <param name="fileNameNodes"></param>
+        /// <param name="fileNameRoads"></param>
+        /// <param name="fileNameSubRoads"></param>
+        public void OSM2sim(float minLat, float minLon, float maxLat, float maxLon, string fileNameNodes, string fileNameRoads, string fileNameSubRoads)
+        {
+            foreach(RoadType rt in roadTypes)
+            {
+                try
+                {
+                    object[] array = { 3.5 };
+                    ILink link = lc.addLink(42, "LINESTRING(1 1,2 2)", array);
+
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+            }
         }
 
         public long getNumOfNodes()
