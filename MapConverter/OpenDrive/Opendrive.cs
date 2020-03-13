@@ -16,8 +16,12 @@ namespace OpenDrive
         public List<Station> stations = new List<Station>();
 
 
-        public Opendrive(XmlElement root)
+        public Opendrive(string filepath)
         {
+
+            XmlDocument doc = new XmlDocument();
+            doc.Load(filepath);
+            XmlElement root = doc.DocumentElement;
             this.header = new Header(root.SelectSingleNode("/OpenDRIVE/header"));
             foreach(XmlNode nroad in root.SelectNodes("/OpenDRIVE/road"))
             {
