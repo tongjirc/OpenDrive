@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\马万经课题组\\项目\\项目书ing\\人车在环\\代码\\路网生成\\C#测试\\OpenDrive.csproj",
+      "projectUniqueName": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
       "projectName": "OpenDrive",
-      "projectPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\马万经课题组\\项目\\项目书ing\\人车在环\\代码\\路网生成\\C#测试\\OpenDrive.csproj",
+      "projectPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
       "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\马万经课题组\\项目\\项目书ing\\人车在环\\代码\\路网生成\\C#测试\\obj\\",
+      "outputPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
       }
     }
   }
