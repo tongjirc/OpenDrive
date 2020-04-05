@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj": {}
+    "C:\\Users\\lenovo\\Downloads\\OneDrive - Tongji\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj": {
+    "C:\\Users\\lenovo\\Downloads\\OneDrive - Tongji\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
+        "projectUniqueName": "C:\\Users\\lenovo\\Downloads\\OneDrive - Tongji\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
         "projectName": "OpenDrive",
-        "projectPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
+        "projectPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - Tongji\\Github\\OpenDrive\\MapConverter\\OpenDrive.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - 同济大学\\Github\\OpenDrive\\MapConverter\\obj\\",
+        "outputPath": "C:\\Users\\lenovo\\Downloads\\OneDrive - Tongji\\Github\\OpenDrive\\MapConverter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
