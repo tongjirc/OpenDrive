@@ -9,7 +9,7 @@ namespace OpenDrive
     {
          static void Main(string[] args)
         {
-            string filepath = @"..\..\kreuz-frankfurt-sample-generic-2019-02-08.xodr";
+            string filepath = @"..\..\map.xodr";
             Opendrive opendrive = new Opendrive(filepath);
         }
     }

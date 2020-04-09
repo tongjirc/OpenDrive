@@ -10,6 +10,8 @@ namespace OpenStreetMapsParser
         long id;
         string name;
         bool twoWay;
+        Dictionary<long, Node> Nodes = null;
+
         public Road(long id, string name, bool twoWay)
         {
             this.id=id;
