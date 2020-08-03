@@ -9,4 +9,10 @@
     <Folder Include="OpenStreetMap\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="asn1csrt">
+      <HintPath>bin\Debug\netcoreapp3.1\asn1csrt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

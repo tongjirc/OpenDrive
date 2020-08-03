@@ -1,20 +1,3 @@
-/*************************************************************/
-/* Copyright (C) 2020 OSS Nokalva, Inc.  All rights reserved.*/
-/*************************************************************/
-
-/* THIS FILE IS PROPRIETARY MATERIAL OF OSS NOKALVA, INC.
- * AND MAY BE USED ONLY BY DIRECT LICENSEES OF OSS NOKALVA, INC.
- * THIS FILE MAY NOT BE DISTRIBUTED.
- * THIS COPYRIGHT STATEMENT MAY NOT BE REMOVED. */
-
-/* Generated for: tongji (Trial), License 80149Z 80149Z. */
-/* Abstract syntax: VehStatus */
-/* Created: Thu Jan 16 15:47:39 2020 */
-/* ASN.1/C# Compiler version: 4.7 */
-/* ASN.1 compiler options and file names specified:
- * -uper -root -noSampleCode -messageFormat msvc -allow universaltags
-*/
-
 
 namespace VehStatus.DefPosition
 {
