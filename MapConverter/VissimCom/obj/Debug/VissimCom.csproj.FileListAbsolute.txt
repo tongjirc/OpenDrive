@@ -1,0 +1,22 @@
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\bin\Debug\VissimCom.exe.config
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.csprojResolveAssemblyReference.cache
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\Interop.VISSIMLIB.dll
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.csproj.ResolveComReference.cache
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.Form1.resources
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.Properties.Resources.resources
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.csproj.GenerateResource.Cache
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\bin\Debug\VissimCom.exe
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\bin\Debug\VissimCom.pdb
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.exe
+c:\users\hzl\documents\visual studio 2012\Projects\VissimCom\VissimCom\obj\Debug\VissimCom.pdb
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.csprojAssemblyReference.cache
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\Interop.VISSIMLIB.dll
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.csproj.ResolveComReference.cache
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.Form1.resources
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.Properties.Resources.resources
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.csproj.GenerateResource.cache
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.exe
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\obj\Debug\VissimCom.pdb
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\bin\Debug\VissimCom.exe.config
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\bin\Debug\VissimCom.exe
+C:\Users\nxyct\Desktop\VissimComPlain\VissimCom\bin\Debug\VissimCom.pdb
