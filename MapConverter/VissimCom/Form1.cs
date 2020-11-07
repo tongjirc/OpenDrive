@@ -121,6 +121,8 @@ namespace MapConvertor
                     #region 信息打包成CV2X消息 数据域
                     MessageFrame msgf = new MessageFrame();
                     PerUnalignedCodec codec = new PerUnalignedCodec();
+                    MapData map = new MapData();
+                    MsgFrame.Node node = new MsgFrame.Node();
                     BasicSafetyMessage bsm = new BasicSafetyMessage();
                     byte[] buffercidi = new byte[100];
                     bsm.MsgCnt = 0;
